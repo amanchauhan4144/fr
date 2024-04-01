@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
+section {
+    /* border-top: 0.01px solid white; */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* This is the  starting of css styles for first container*/
+
+
+.width83 {
+    width: 83%;
+}
+
+.width92 {
+    width: 92%;
+}
+
+.navLogoHeading {
+    font-family: 'roboto';
+    color: #4073de;
+    font-weight: 500;
+    font-size: 2.588rem;
+}
+
+sup {
+    font-size: 1.16rem !important;
+    top: -0.67em;
+    ;
+}
+
+.nav-item a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.navBarItems {
+    gap: 4.2rem;
+}
+
+.navBarItems li {
+    padding: 4.2% 0;
+}
+
+
+
+.homeitem,
+li.nav-item:hover {
+    background-image: linear-gradient(0deg, #155ed1 0%, #ba5cff 100%);
+    color: #fff;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.topContainerContent {
+    background: url(../images/bgimagefirst.jpg);
+    background-size: 100% 44rem;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.cardsRow {
+    margin-top: 47%;
+}
+
+.cardHeading {
+    font-size: 2.6rem;
+}
+
+.cardpara {
+    width: 80%;
+    font-size: 1.24rem;
+}
+
+.Register {
+    background-image: linear-gradient(0deg, #ff8615 0%, #ffaf00 99%, #ffaf00 100%);
+}
+
+.Register:hover {
+    background-image: linear-gradient(0deg, #ffaf00 0%, #ff8615 50%, #ff8615 100%);
+}
+
+.franchiseCard {
+    background-image: linear-gradient(0deg, #155ed1 0%, #ba5cff 100%);
+}
+
+.levelCard {
+    background-image: linear-gradient(0deg, #ff1c98 0%, #ff3050 100%);
+}
+
+.locationCard {
+    background-image: linear-gradient(0deg, #b61fe0 0%, #ff14e7 99%, #ff14e7 100%);
+}
+
+/* This part is about starting of css animation of card hover on first container */
+.cardIndividual {
+    padding: 1.1% 1.8% 1.1% 1.8%;
+}
+
+.cardIndividual {
+    position: relative;
+    overflow: hidden;
+}
+
+.cardIndividual:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 162, 221, 1.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease 0s
+}
+
+.cardIndividual:hover:after {
+    opacity: 1
+}
+
+.cardIndividual img {
+    width: 100%;
+    height: auto;
+    transition: all 1.5s ease 0s
+}
+
+.cardIndividual .box-content,
+.cardIndividual .icon li a {
+    position: absolute;
+    transition: all .6s ease 0s
+}
+
+.cardIndividual:hover img {
+    transform: scale(1.2)
+}
+
+.cardIndividual .icon {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.cardIndividual .icon li a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    opacity: 0
+}
+
+.cardIndividual:hover .icon li a {
+    top: 30%;
+    opacity: 1;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cardIndividual .icon li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIndividual .icon li a:hover {
+    background: #fff;
+    color: blue
+}
+
+.cardIndividual .icon li:first-child a {
+    left: -90%;
+    right: 0
+}
+
+.cardIndividual:hover .icon li:first-child a {
+    left: -55px
+}
+
+.cardIndividual .icon li:last-child a {
+    right: -90%;
+    left: 0
+}
+
+.cardIndividual:hover .icon li:last-child a {
+    right: -55px
+}
+
+.cardIndividual .box-content {
+    width: 100%;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, .1);
+    bottom: -100px;
+    left: 0;
+    z-index: 1
+}
+
+.cardIndividual:hover .box-content {
+    bottom: 0
+}
+
+.cardIndividual .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0
+}
+
+.cardIndividual .post {
+    display: block;
+    font-size: 14px;
+    color: #fff
+}
+
+/* This part is about ending of css animation of card hover on first container */
+
+
+/* This is the  ending of css styles for first container*/
+
+/* This is the  starting  of css styles for second container*/
+
+.schoolTextContent,
+.schoolRankContent {
+    padding-top: 15%;
+}
+
+.schoolTextContentHeading,
+.schoolRankContentHeading {
+    font-size: 2.73rem;
+}
+
+.lightgreyCard,
+.front,
+.frontThree {
+    background-color: #f7f7f7;
+}
+
+.lightGreyCardPhoto:hover {
+    animation: flipYin 2s ease-in-out;
+}
+
+@keyframes flipYin {
+    0% {
+        transform: scale(1);
+    }
+
+    10%,
+    20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+
+.schoolTextContentPara,
+.schoolRankContentPara,
+.eventsListText,
+.reviewCardPara {
+    color: #545454;
+    font-size: 1.23rem;
+}
+
+.readMoreButton {
+    background-image: linear-gradient(87deg, #ff8b00 0%, #ff3050 100%);
+    width: 43%;
+    font-size: 1.238rem;
+    padding: 1.3rem 1rem;
+}
+
+/* gggg */
+
+.readMoreButton {
+    position: relative;
+    overflow: hidden;
+}
+
+.readMoreButton:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+    background-image: linear-gradient(87deg, #ff8b00 0%, #ff3050 100%);
+
+
+    font-weight: 400;
+    font-size: 1.238rem;
+
+    padding: 1.6rem 1rem;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.readMoreButton:hover:before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.readMoreButton div {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show the text on hover */
+.readMoreButton:hover div {
+    opacity: 0;
+}
+
+.mobilecard {
+    display: none;
+}
+
+/* This is the  starting  of css styles for Third container*/
+.swimLessons,
+.swimRank,
+.footerInfo {
+    width: 90.2%;
+    padding-top: 12%;
+}
+
+.schoolDescription {
+    padding-bottom: 4.9%;
+}
+
+.schoolDescriptionRowSwim {
+    margin-top: 4.8%;
+}
+
+.swimmingSchoolBelowPara {
+    width: 79%;
+}
+
+.schoolRank {
+    padding-bottom: 6.8%;
+    opacity: 0.902;
+
+    background: linear-gradient(#ff3351, #f6058e), rgba(0, 0, 0, 0.2);
+
+}
+
+.knowMoreButton {
+    background-color: white;
+    width: 40%;
+    font-size: 1.238rem;
+    padding: 1.2rem 1rem;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+}
+
+
+
+
+
+.knowMoreButton:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+
+.navLogoHeading:hover {
+    text-shadow: 0px 10px 10px #234D3C;
+}
+
+.schoolRankContainer {
+    background: url(../images/diver.jpg);
+    background-size: 100% 91.8%;
+    background-repeat: no-repeat;
+}
+
+/* This is the  starting  of css styles for Fourth container*/
+.eventsTextCard {
+    background-image: linear-gradient(0deg, #ff7f00 0%, #ffbb18 99%, #ffbb18 100%);
+    padding-bottom: 3.5rem;
+}
+
+.eventsTextContent {
+    padding-top: 11%;
+}
+
+.eventsTextContentHeading {
+    font-size: 2.9rem;
+}
+
+.eventsListIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* This is the  starting  of css styles for fifth container*/
+
+.testinomialPic {
+    width: 73px;
+    height: 72px;
+    top: 59px;
+    left: 110px;
+    z-index: 2;
+}
+
+.reviewSection {
+    padding-top: 10%;
+}
+
+.front,
+.frontThree {
+    padding: 7.3rem 2rem 1rem 2rem;
+    height: 24rem;
+}
+
+.frontThree {
+    padding: 7.3rem 2rem 3rem 2rem;
+}
+
+.reviewUserImg {
+    width: 60%;
+}
+
+.reviewCardPara {
+    font-weight: 300;
+}
+
+.frontThreeName {
+    padding-top: 2.1rem;
+}
+
+.reviewNameColor {
+    color: rgb(232, 120, 23);
+}
+
+/* This is the  starting  of css styles for sixth  container which is footer section*/
+
+.phoneLogoSection,
+.socialIcon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.imggg {
+    width: 1.1rem;
+}
+
+.footerCard {
+    background-image: linear-gradient(0deg, #0182CC 0%, #0198E0 100%);
+    padding-bottom: 4rem;
+}
+
+.footerSection {
+    margin-bottom: 4rem;
+}
+
+.schoolTextContentPara {
+    opacity: 0.9;
+}
+
+.imgggf {
+    width: 1.4rem;
+}
+
+.buttonPointer {
+    cursor: pointer;
+}
+
+.textColorWithOpacity {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* modal animation which i kept separate  */
+@keyframes perspectiveleftin {
+    from {
+        opacity: 0;
+        transform: perspective(2000px) rotateY(-90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(2000px) rotateY(0deg);
+    }
+}
+
+.modal-content {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+    animation: perspectiveleftin 0.5s ease-in-out;
+}
+
+/* modal */
+
+/* card rotating animation starts */
+
+.customerCardBox:hover {
+    perspective: 2000px;
+    /* Set perspective outside the animation */
+    animation: rotateAnimation 2.5s ease-in-out forwards;
+
+    transform-style: preserve-3d;
+    /* Ensure proper rendering of the 3D transform */
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(0deg);
+        /*  this Starts it  with no rotation */
+    }
+
+    to {
+        transform: rotateY(-360deg);
+        /* Rotates  it to -360 degrees */
+    }
+}
+
+/* card rotating animation  ends  */
+/* animation */
+.desktopcardimg {
+    position: relative;
+}
+
+.mapoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    transition: transform 1.3s ease-in-out;
+    opacity: 0;
+}
+
+.desktopcardimg:hover .mapoverlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contactHeading {
+    margin: 0;
+    padding: 0;
+    /* font-size:120px; */
+    text-transform: uppercase;
+    position: relative;
+    color: #ccc;
+}
+
+.contactHeading:before {
+    content: "CONTACTS";
+    position: absolute;
+    color: rgb(194, 196, 149);
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.contactHeading:hover:before {
+    width: 100%;
+}
+
+.greenHover:hover,
+.phoneNumber:hover,
+.emailText:hover,
+.eventsTextContentHeading:hover {
+    text-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.eventsCardImageContainer,
+.eventsTextCard {
+    transition: all 0.5s ease-in-out;
+}
+
+.eventsCardImageContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* animation */
+
+.schoolTextContentHeading:hover {
+    -webkit-text-stroke: 1px #0198E0;
+}
+
+.modalhead,
+.modalfoot {
+    background-image: linear-gradient(0deg, #155ed1 0%, #ba5cff 100%);
+
+    color: white;
+
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: black;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Adjust the distance to move up */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+blockquote:hover{
+    text-shadow: 
+    0 -1.3em #000, 
+    0 0 #1095c1;
+}
+blockquote{
+
+    text-shadow: 
+      0 0 #000, 
+      0 1.2em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+}
+.knowMoreButton:hover{
+    animation: move 15s infinite ease-in-out;
+}
+@keyframes move {
+    20%, 100% {
+      opacity: 0;
+      transform: translate(200px, 0);
+    }
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+  }

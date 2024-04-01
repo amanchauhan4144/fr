@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swimming Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/mediaMobile.css">
+  <link rel="stylesheet" href="assets/css/mediaTablet.css">
+</head>
+
+<body>
+  <!-- This is the starting of project body -->
+  <section class="container-fluid parent g-0 pb-5">
+    <section class="container-fluid g-0 topContainer">
+      <!-- This is the first container which basically talks about company intro   -->
+      <nav class="navbar navbar-expand-lg m-auto p-0 width92"> <!-- This is starting of navbar content  -->
+        <div class="container-fluid g-0 d-flex align-items-center">
+          <a class="navbar-brand py-0" href="#">
+            <h2 class="d-inline-block mb-0  ms-1  navLogoHeading">Swimming<sup style="font-size: .75rem;">&reg</sup>
+            </h2>
+          </a>
+          <!-- This is the button responsible for collapsing the navbar on smaller screens  -->
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse w-75 justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center navBarItems  ">
+              <li class="nav-item homeitem px-2">
+                <a class=" nav-link navAnchor text-black fs-5 " data-bs-toggle="modal"
+                  data-bs-target="#exampleModalToggle" aria-current="page" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navAnchor text-black  " href="#">About us</a>
+              </li>
+              <li class="nav-item gallaryitem">
+                <a class="nav-link navAnchor text-black fs-5" href="#">Gallary</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link navAnchor blogitem  text-black fs-5" href="#">Blog</a>
+              </li>
+              <li class="nav-item"> <!--  This is one of the nav items -->
+                <a class="nav-link navAnchor text-black fs-5" href="#">Contacts</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav> <!-- This is ending of navbar content   -->
+
+      <!-- This part is for modal which will apppear after clicking on homeicon -->
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header modalhead">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Sign Up Portal</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> <!-- This is the modal body where i created a form inside it  -->
+              <form>
+
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Contact Number:</label>
+                  <input type="number" class="form-control" id="number" name="number">
+
+                </div>
+                <div class="mb-3">
+                  <label for="job" class="form-label">Job Type:</label>
+                  <select class="form-control" id="job" name="job">
+                    <option selected>Select job type</option>
+                    <option>Designer</option>
+                    <option>Manager</option>
+                    <option>Accounting</option>
+                  </select>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer ">
+              <button class="btn modalfoot" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"
+                data-dismiss="modal">Click to sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is modal part ending -->
+
+      <!-- This is below part of first container which contains a row of four cards -->
+      <section class="container-fluid g-0  topContainerContent  ">
+        <div class="row cardsRow width92 gap-4 mx-auto">
+          <div class="col-md col-12 cardIndividual text-md-left text-center Register">
+            <h2 class=" fw-medium w-85 pb-1 cardHeading registerHeading text-white ">Register for swim lessons</h2>
+            <div class="d-flex align-items-end justify-content-md-between justify-content-center ">
+              <p class=" lh-sm cardpara text-md-start mb-0 pt-3 text-light">Our experienced in- structors offer a va-
+                riety of
+                swimming lessons for children and teens.</p>
+              <span class="d-md-inline-block d-none ">
+                <img src="assets/images/arrow.png" class="pb-1 arrowspan" alt="">
+              </span>
+            </div>
+            <!--  -->
+            <ul class="icon">
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-link"></i></a></li>
+            </ul>
+            <div class="box-content">
+              <h3 class="title">Contact for registering</h3>
+              <span class="post">Mr. Deepak Sharma</span>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-md col-12 cardIndividual franchiseCard text-md-left text-center ">
+            <!-- This is an individual card body   -->
+            <h2 class=" fw-medium w-85 pb-1 cardHeading franchiseHeading text-white ">Franchise Opportu-nities</h2>
+            <div class="d-flex align-items-end justify-content-md-between justify-content-center">
+              <p class=" lh-sm cardpara text-md-start mb-0 pt-3 text-light ">Swimming School Franchise is posi- tioned
+                as the leader
+                the thriving chil- dren's education.</p>
+              <span class="d-md-inline-block d-none ">
+                <img src="assets/images/arrow.png" class="pb-1 arrowspan" alt="">
+              </span>
+            </div>
+            <!--  -->
+            <ul class="icon">
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-link"></i></a></li>
+            </ul>
+            <div class="box-content">
+              <h3 class="title">Franchise Details</h3>
+              <span class="post">Ankit Rana</span>
+            </div>
+            <!--  -->
+          </div>
+
+          <div class="col-md col-12 cardIndividual levelCard text-md-left text-center">
+            <h2 class=" fw-medium w-90 pb-1 cardHeading levelHeading text-white ">What Level Is My Child?</h2>
+            <div class="d-flex align-items-end justify-content-md-between justify-content-center">
+              <p class=" lh-sm cardpara text-md-start mb-0 pt-3 text-light ">Use our Level Finder to determine your
+                swimmer's level or
+                call us for any assis- tance you need!</p>
+              <span class="d-md-inline-block d-none">
+                <img src="assets/images/arrow.png" class="pb-1 arrowspan" alt="">
+              </span>
+            </div>
+            <!--  -->
+            <ul class="icon">
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-link"></i></a></li>
+            </ul>
+            <div class="box-content">
+              <h3 class="title">Find your child's talent</h3>
+              <span class="post">+919835347</span>
+            </div>
+
+          </div>
+
+          <div class="col-md col-12 cardIndividual locationCard text-md-left text-center">
+            <h2 class=" fw-medium w-85 pb-1 cardHeading locationHeading text-white ">Locate a Swim School</h2>
+            <div class="d-flex align-items-end justify-content-md-between justify-content-center">
+              <p class=" lh-sm cardpara text-md-start mb-0 pt-3 text-light ">Use our Level Finder to determine your
+                swimmer's level or
+                call us for any assis- tance you need!</p>
+              <span class="d-md-inline-block d-none">
+                <img src="assets/images/arrow.png" class="pb-1 arrowspan" alt="">
+              </span>
+            </div>
+
+            <ul class="icon">
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><i class="fa fa-link"></i></a></li>
+            </ul>
+            <div class="box-content">
+              <h3 class="title">Find us on map</h3>
+              <span class="post">100+ locations</span>
+            </div>
+            <!--  -->
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+    <!-- This is the 2nd container from here , in this we have features of swimming school -->
+    <section class="container-fluid g-0 schoolDescription pt-5 ">
+      <div class="row schoolDescriptionRow width92 mx-auto  gap-4 g-0">
+        <div class="col-md col-12 lightgreyCard ">
+          <!-- This is a card which contains Text related to features of school  -->
+          <div
+            class="schoolTextContent schoolWelcome width83 d-flex flex-column mx-auto justify-content-center justify-content-md-start align-items-center align-items-md-start">
+            <h1 class=" fw-medium  schoolTextContentHeading text-center text-md-left ">Welcome to our school!</h2>
+              <div class=" lightgreyCard mobilecard             ">
+                <img src="assets/images/secondpageswimmer.jpg" alt="" width="100%">
+              </div>
+              <p class=" lh-sm   pt-3 schoolTextContentPara mt-md-0 mt-4">Swimming School is proud to provide
+                state-of-the-art
+                aquatic facilities that are dedicated to indoor swimms classes programs for children.</p>
+
+
+              <div class="px-2 mt-3 text-white readMoreButton text-center buttonPointer" data-hover="Contact  Us">
+                <div>Read More</div>
+              </div>
+
+          </div>
+        </div>
+        <div class="col-md col-12 lightgreyCard desktopcardimg lightGreyCardPhoto">
+          <!-- This card contains an image of a swimmer   -->
+          <img src="assets/images/secondpageswimmer.jpg" alt="Image of a male swimmer " width="100%">
+        </div>
+      </div>
+
+
+      <!-- This is basically a row of contents which contains two cards for  (text and image)   -->
+      <div class="row schoolDescriptionRowSwim width92 mx-auto   gap-4 g-0">
+        <div class="col-md col-12 lightgreyCard desktopcardimg order-md-1 order-2    lightGreyCardPhoto          ">
+          <img src="assets/images/secondpageswimmerfemale.jpg" alt="Image of a female swimmer" width="100%">
+        </div>
+        <div class="col-md col-12 lightgreyCard  order-1 order-md-2">
+          <div
+            class="schoolTextContent width83 swimLessons mt-md-0 mt-5 d-flex flex-column mx-auto  me-md-0 justify-content-center justify-content-md-start align-items-center align-items-md-start">
+            <h1 class=" fw-medium  schoolTextContentHeading   ">Swim lessons for Children and teens</h1>
+            <div class=" lightgreyCard mobilecard             ">
+              <img src="assets/images/secondpageswimmerfemale.jpg" alt="Image of a female swimmer" width="100%">
+            </div>
+            <p class=" lh-sm   pt-3 schoolTextContentPara mt-md-0 mt-4 text-md-left text-justify ">We offer a variety of
+              private and
+              group lessons for chil- dren and teens. The lessons and swimming courses include everything your kid needs
+              to swim confidently.</p>
+
+
+            <div class="px-2  mt-3 text-white readMoreButton text-center buttonPointer" data-hover="Contact  Us">
+              <div>Read More</div>
+            </div>
+            <!--  -->
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- 2nd container which was about features of the swimming school ends here  -->
+
+    <!-- 3rd ontainer starts here which is about #1 Ranking of the swimming school  -->
+    <section class="container-fluid g-0 schoolDescription schoolRankContainer pt-0 mt-md-0 mt-5 ">
+      <div class="row schoolDescriptionRowSwim width92 mx-auto   gap-4 g-0">
+
+        <div class="col-md col-12 schoolRank  "> <!-- This card contains text about what makes their school #1  -->
+          <div
+            class="schoolRankContent width83 swimRank  d-flex flex-column mx-auto  me-md-0 justify-content-center justify-content-md-start align-items-center align-items-md-start">
+            <h1 class=" fw-medium d-sm-block d-none schoolRankContentHeading w-90 text-white  ">Why Our Swimming School
+              is Rated #1 in
+              The Region</h1> <!--w-83 and w-90 are custom classes here for setting width properly  -->
+            <h1 class=" fw-medium d-sm-none d-block schoolRankContentHeading w-90 text-white text-center pb-5 ">Why We
+              Are Rated #1
+            </h1>
+            <div class=" lightgreyCard mobilecard             ">
+              <img src="assets/images/secondpageswimmerfemale.jpg" alt="" width="100%">
+            </div>
+            <p class=" lh-sm mt-md-2 mt-4 mb-3  pt-4 schoolRankContentPara text-md-left w-80  text-light ">We offer
+              a variety of private and group less- ons for chil- dren and teens. The lessons and swimming courses
+              include everything your kid needs to swim confidently.</p>
+            <p
+              class=" lh-sm  pt-2 schoolRankContentPara swimmingSchoolBelowPara text-md-left w-80 text-justify text-light ">
+              Swimming School is so proud to provide state-of-the-art aquatic facilities that are dedi-</p>
+
+
+            <div class="px-2 mt-4   text-dark knowMoreButton  text-center bg-white buttonPointer"><span>Know More</span>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-md d-none d-md-block   order-1 order-md-2">
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- 3rd ontainer which was about rank of school ends here -->
+
+    <!-- 4th container starts here which talks about events being held in their school -->
+    <section class="container-fluid g-0 mt-md-0 mt-5  pt-0  pb-5">
+      <div class="row swimEventsRow width92 mx-auto h-100  gap-4 g-0">
+        <div class="col-md col-12 eventsTextCard"> <!--This card contains a list of events  -->
+          <div
+            class="eventsTextContent width83 d-flex flex-column mx-auto justify-content-center justify-content-md-start align-items-center align-items-md-start">
+            <h1 class=" fw-medium  eventsTextContentHeading text-center text-md-left text-light ">Our Events</h2>
+
+              <div class="eventsListContainer mt-4 d-flex flex-column gap-3 justify-content-start">
+                <div class="eventsListFirst d-flex justify-content-start ">
+                  <div class="eventsListIcon text-center text-white border-white  rounded-circle"> &#11166; </div>
+                  <h4 class="eventsListText  fw-normal textColorWithOpacity text-opacity-75 ms-3 ">Lorem ipsum dolor sit
+                    amet, consectetur
+                  </h4>
+                </div>
+
+                <div class="eventsListSecond d-flex justify-content-start ">
+                  <div class="eventsListIcon text-center text-white border-white rounded-circle">&#11166;</div>
+
+                  <h4 class="eventsListText textColorWithOpacity fw-normal ms-3">Xng elit, sed do eiusmod tempor
+                    incilabore</h4> <!-- This talks about one of the events  -->
+                </div>
+
+                <div class="eventsListThird d-flex justify-content-start ">
+
+                  <div class="eventsListIcon text-center text-white border-white rounded-circle">&#11166;</div>
+
+                  <h4 class="eventsListText textColorWithOpacity fw-normal ms-3">Eolore magna aliqua. Quis ipsum
+                    suspendi</h4>
+                </div>
+
+                <div class="eventsListFourth d-flex justify-content-start ">
+
+                  <div class="eventsListIcon text-center text-white border-white rounded-circle">&#11166;</div>
+
+                  <h4 class="eventsListText textColorWithOpacity fw-normal ms-3">Drices gravida. Risus commodo viverra
+                  </h4>
+                </div>
+
+                <div class="eventsListFifth d-flex justify-content-start ">
+
+                  <div class="eventsListIcon text-center text-white border-white rounded-circle">&#11166;</div>
+
+                  <h4 class="eventsListText textColorWithOpacity fw-normal ms-3">Maecenas accumsan lacus vel facilisis.
+                  </h4>
+                </div>
+
+
+              </div>
+
+
+          </div>
+        </div>
+        <div class="col-md col-12 eventsCardImageContainer   d-sm-block d-none">
+          <img src="assets/images/underwaterdiver.jpg " alt="Image of a female swimmer underwater" class="h-100"
+            width="100%">
+
+        </div>
+      </div>
+
+    </section>
+    <!-- 4th container which was about events ends here -->
+
+    <!-- 5th container starts here which contains reviews of people who took training from that school  -->
+    <section class="container-fluid g-0 reviewSection    ">
+
+      <div class="reviews width92 mx-auto g-0"> <!-- width92 is  a custom class here for width  -->
+        <div class="row justify-content-center customerCardBox g-0 gap-4">
+          <div class="col-12 d-flex justify-content-center reviewCardsMobileGap position-relative col-md pb-5 pb-sm-0">
+            <div class="customerCard cursorPointer">
+              <img class="position-absolute translate-middle start-50 reviewUserImg"
+                src="assets/images/reviewiconone.png" class="reviewUserImg" />
+              <div class="front frontOne text-md-start text-center  ">
+                <p class="reviewCardPara  text-md-left  pt-md-0 pt-4">Thank you for making me a confident swim- mer! I
+                  hope to learn more from the school's Instructors during future lessons,
+                </p>
+                <p class="robotoFont reviewNameColor fw-normal fs-2 pt-1 text-left">Anne, 25 y.o.</p>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- This is also a review card which contains image of a reviewer and his/her review  -->
+          <div class="col-12 d-flex justify-content-center reviewCardsMobileGap position-relative col-md pb-5 pb-sm-0">
+            <div class="customerCard cursorPointer">
+              <img class="position-absolute translate-middle start-50 reviewUserImg"
+                src="assets/images/reviewicontwo.png" alt="image of a person giving review about the school"
+                class="reviewUserImg" />
+              <div class="front text-md-start text-center ">
+                <p class="reviewCardPara pt-md-0 pt-4">I hated swimming until I joined this swimming school. Their
+                  lessons improved my swim- ming and breathing skills.</p>
+                <p class="robotoFont reviewNameColor fw-normal fs-2 pt-1 text-left">Sam, 23 y.o.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-center   reviewCardsMobileGap position-relative col-md ">
+            <div class="customerCard cursorPointer">
+              <img class="position-absolute translate-middle start-50 reviewUserImg"
+                src="assets/images/reviewiconthree.png" alt="image of a person giving review about the school"
+                class="reviewUserImg" />
+              <div class="frontThree text-md-start text-center">
+                <p class="reviewCardPara pt-md-0 pt-4">I have been going here for swimming lessons for over 3 years and
+                  it helped me become a better swimmer.</p>
+                <p class="robotoFont reviewNameColor fw-normal fs-2 frontThreeName text-left">Peter, 25 y.o.</p>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-center mt-md-0 mt-5  position-relative col-md ">
+            <div class="customerCard cursorPointer">
+              <img class="position-absolute translate-middle start-50 reviewUserImg"
+                src="assets/images/reviewiconfour.png" alt="image of a person giving review about the school"
+                class="reviewUserImg" />
+              <div class="front text-md-start text-center ">
+                <p class="reviewCardPara pt-md-0 pt-4">Joining this school has changed my life as I was afraid of water
+                  before but now I like it a lot thanks to your les- sons.</p>
+                <p class="robotoFont reviewNameColor fw-normal fs-2 pt-1 text-left ">Jane, 20 y.o.</p>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- 5th container ends here which was about the reviews   -->
+
+    <!-- 6th container starts here which contains contact information related content -->
+    <footer class="container-fluid g-0 mt-3 footerSection ">
+      <div class="footerContent width92 mx-auto g-0">
+        <!--  -->
+        <div class="row footerRow mt-5 mx-auto gap-4 g-0">
+
+          <div class="col-md col-12 footerCard  ">
+            <div
+              class=" width83 footerInfo  d-flex flex-column mx-auto  me-md-0 justify-content-center justify-content-md-start align-items-center align-items-md-start">
+              <h1 class=" fw-medium  schoolTextContentHeading contactHeading text-light  ">Contacts</h1>
+
+              <p class=" mb-1   pt-3 schoolTextContentPara text-md-left text-justify text-light greenHover ">Address:
+                4578 Marmora
+                Road,</p>
+              <p class="     schoolTextContentPara text-md-left text-justify text-light greenHover">Glasgow D04 89GR</p>
+
+              <div class="phoneSection d-flex justify-content-center align-items-center">
+                <div class="phoneLogoSection d-flex justify-content-center align-items-center rounded-circle bg-light">
+                  <img src="assets/images/phone_click_to_edit.png" alt="phone logo icon" class="imggg" width="95%">
+                </div>
+                <div class=" ms-2 phoneNumber display-5 fw-medium text-light greenHover">1-800-2345-6789</div>
+              </div> <!-- This is a phone number section -->
+
+              <div class="emailText schoolTextContentPara greenHover pt-3 text-light">Email: youremail.com</div>
+              <!-- This is a list of social platforms -->
+              <div class="socialsContainer mt-4  d-flex gap-2 buttonPointer">
+                <div class="socialIcon d-flex justify-content-center align-items-center rounded-circle bg-light">
+                  <img src="assets/images/instaicons.png" alt="instagram icon " class=" color" width="60%">
+                </div>
+                <div class="socialIcon d-flex justify-content-center align-items-end pb-1 rounded-circle bg-light">
+                  <img src="assets/images/fbh.png" alt="Facebook icon" class="imgggf" width="100%">
+                </div>
+                <div class="socialIcon d-flex justify-content-center align-items-center rounded-circle bg-light">
+                  <img src="assets/images/twittericons.png" alt="twitter icon" class="" width="60%">
+                </div>
+                <div
+                  class="socialIcon d-flex justify-content-center pe-1 pb-1 align-items-center rounded-circle bg-light">
+                  <img src="assets/images/wbicons.png" alt="whatsapp icon" class="" width="85%">
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="col-md col-12 lightgreyCard desktopcardimg ">
+            <img src="assets/images/footermap.jpg" alt="image of location of their school on map " width="100% "
+              height="100%">
+            <div class="mapoverlay">
+              <h2>Creative <span>Zoe</span></h2>
+              <p class="icon-links">
+                <a href="#"><span class="icon-heart"></span></a>
+                <a href="#"><span class="icon-eye"></span></a>
+                <a href="#"><span class="icon-paper-clip"></span></a>
+              </p>
+              <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his
+                face.</p>
+
+            </div>
+          </div>
+          <!--  -->
+        </div>
+    </footer>
+    <!-- 6th container ends here which was about contact related information -->
+
+    <!-- 7th container starts here which is a copyright line   -->
+    <blockquote
+      class="d-flex w-md-100 w-75 mx-auto  text-md-justify text-center justify-content-center fw-normal  schoolTextContentPara  ">
+      Swimming &copy; 2020. All Rights Reserved. Privacy Policy.</blockquote>
+    <!-- 7th container ends here which was about a copyright line  -->
+
+
+
+  </section> <!-- This marks the end of parent section which contains all the containers.  -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body> <!-- This is the ending of project body   -->
+
+</html>

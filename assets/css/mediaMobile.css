@@ -1,0 +1,61 @@
+/* This has some media query css for fixing alignment on mobile devices */
+@media (max-width:600px) {
+    .navBarItems{
+        gap: 0;
+    }
+
+    .mobilecard{
+        display: block;
+    }
+    .desktopcardimg{
+        display: none;
+    }
+    .schoolTextContentPara{
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+    .schoolTextContentHeading{
+        text-align: center;
+    }
+    .swimLessons,.schoolWelcome{
+        width: 100%;
+    }
+    .reviewCardsMobileGap{
+        margin-bottom: 6rem;
+    }
+    .reviewSection{
+        margin-top: 6rem;
+    }
+    .front,.frontThree{
+        height: 22rem;
+    }
+    .frontOne{
+        height: 24rem;
+    }
+    .frontThreeName{
+        padding-top: 0.6rem;
+    }
+    .reviewCardPara,.schoolRankContentPara,.cardpara{
+        text-align: justify;
+    }
+    .schoolRankContainer{
+        background-image: none;
+    }
+    .knowMoreButton,.readMoreButton{
+        width: 60%;
+    }
+    .levelHeading{
+        width: 90%;
+        margin: auto;
+    }
+    .registerHeading,.franchiseHeading,.locationHeading{
+        width: 100%;
+    }
+    .cardIndividual{
+        padding-bottom: 2rem;
+    }
+    .homeitem{
+       
+        background-image: none;
+    }
+}

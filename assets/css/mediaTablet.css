@@ -1,0 +1,44 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+    .arrowspan{
+        display: none;
+    }
+
+    .cardHeading {
+        font-size: 2rem;
+    }
+
+    .locationHeading,.levelHeading,.registerHeading,.franchiseHeading{
+        width: 96%;
+    } 
+ 
+
+    .cardpara
+    {
+         width: 100%;
+        word-break: break-all;
+        font-size: .9rem;
+    }
+
+ 
+
+    .cardIndividual:hover .icon li a {
+        top: 20%;
+        opacity: 1;
+    }
+    .customerCard{
+        height: 34rem;
+    }
+    .front,.frontThree{
+        height: 100%;
+    }
+    .reviewUserImg{
+        width: 9rem;
+    }
+  }
+
+  /* This part was about media query for tablets as some alignment and position neede to be fixed  */
+
+  
